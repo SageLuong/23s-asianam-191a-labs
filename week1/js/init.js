@@ -1,5 +1,5 @@
 // JavaScript const variable declaration
-const map = L.map('the_map').setView([34.049580, -118.451088], 15); // (1)!
+const map = L.map('the_map').setView([34.049580, -118.451088], 4); // (1)!
 
 // Leaflet tile layer, i.e. the base map
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
