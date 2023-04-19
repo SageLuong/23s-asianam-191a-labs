@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: "Alice";
+}
+
 body{
     display: grid;
     /* grid-template-columns: 1fr;  */
@@ -51,6 +57,23 @@ header{
 #background {
     max-height: 100%;
     max-width: 100%;
+    background-size: cover;
+    height:500px;
+    padding-top:80px;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px rgba(29, 38, 23, 0.75);
+}
+
+#backgroundtext{
+    background-color: rgba(255, 253, 238, 0.50);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 60%;
+    margin: auto;
+    margin-top:20px;
+    border-radius: 25px;
 }
 
 #aboutme{
@@ -61,7 +84,7 @@ header{
 }
 
 #otherinterests{
-    padding-bottom: 64px;
+    padding-bottom: 24px;
     padding-left: 64px;
     padding-right: 64px;
 }
