@@ -11,7 +11,7 @@ body{
     grid-template-areas: "header" "main_content" "footer";
     background-color: rgb(255, 253, 238);
     color: rgb(49, 64, 38);
-
+    padding: 0 8px 0 8px;
     /* height: 100vh; */
 }
 
@@ -53,6 +53,7 @@ header{
   /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #111;
+    transition: background-color 0.5s;
   }
 
 ul li{
@@ -72,6 +73,23 @@ ol li{
 #buttons{
     padding-top: 24px;
     padding-bottom: 16px;
+}
+
+.surveyButtons{
+    cursor: pointer;
+    color: rgb(50, 55, 45);
+    background: rgb(253, 137, 122);
+    border-radius: 5px;
+    padding: 16px 32px 16px 32px;
+    margin: 0 8px 8px 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.surveyButtons:hover{
+    background-color: rgb(50, 55, 45);
+    color: rgb(255, 253, 238);
+    transition: background-color .25s;
 }
 
 .main{

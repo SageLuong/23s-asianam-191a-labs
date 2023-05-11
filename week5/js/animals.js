@@ -38,17 +38,7 @@ function createButtons(lat,lng,title){
     newButton.addEventListener('click', function(){
         map.flyTo([lat,lng]); 
     })
-    newButton.style.color = "rgb(50, 55, 45)";
-    newButton.style.background = "rgb(253, 137, 122)";
-    newButton.style.borderRadius = "5px";
-    newButton.style.padding = "16px";
-    newButton.style.paddingLeft = "32px";
-    newButton.style.paddingRight = "32px";
-    newButton.style.marginBottom = "8px";
-    newButton.style.marginLeft = "8px";
-    newButton.style.marginRight = "8px";
-    newButton.style.fontWeight = "bold";
-    newButton.style.fontSize = "20px";
+    newButton.className = "surveyButtons";
     document.getElementById("buttons").appendChild(newButton); 
 }
 

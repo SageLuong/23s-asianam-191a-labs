@@ -1,95 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sage Luong's Map Portfolio</title>
-        <link rel="icon" type="image/jpg" href="images/shiba.jpg">
+        <title>Lab 6</title>
+        <!-- hint: remember to change your page title! -->
         <meta charset="utf-8" />
         <link rel="shortcut icon" href="#">
         <link rel="stylesheet" href="styles/style.css">
+
+        <!-- Leaflet's css-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+        <!-- Leaflet's JavaScript-->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+        <!-- Papa Parse -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     </head>
 
     <body>
         <header>
-            <ul id="navbar">
-                <li id="navbuttons"><a id="navlinksactive", href="index.html"><b>Home</b></a></li>
-                <li id="navbuttons"><a id="navlinksdefault", href="restaurants.html">Favorite Restaurants Maps</a></li>
-                <li id="navbuttons"><a id="navlinksdefault", href="animals.html">Favorite Animals Map</a></li>
-                <li id="navbuttons"><a id="navlinksdefault", href="journal.html">Bullet Journaling Spreads</a></li>
-                <li id="navbuttons"><a id="navlinksdefault", href="https://steamcommunity.com/profiles/76561199073031485/">Steam Profile</a></li>
-                <li id="navbuttons"><a id="navlinksdefault", href="https://www.behance.net/sageluong">Portfolio</a></li>
-              </ul>
+            <!-- space for a menu -->
         </header>
 
         <div class="main">
-            <div id="background", style = "background-image: url('images/background.jpg')">
-                <img src="images/profile.png" style="height:150px; border-radius: 50%; border: 10px solid rgb(49, 64, 38)">
-                <div id="backgroundtext">
-                    <h1 style="font-size:100px; color:rgb(49, 64, 38); margin:10px;"> Sage Luong</h1>
-                    <p style="font-size:30px; color: rgb(49, 64, 38)"><em><b>Spring 2023, Asian Am 191A: Map Portfolio</b></em></p>
+            <div id="contents">
+                <div id="buttons">
+                    
+                </div>
+                <div id="theSurvey">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfcElv5dlXInR7XHQz27_OcYJlWcIUr-GBbc-ocefWlGd1uXg/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
             </div>
-
-        <table>
-            <tr>
-              <td id="aboutme">
-                <img src="images/luna.jpg" style="height:600px; box-shadow: 5px 5px 10px rgba(29, 38, 23, 0.75); border-radius: 25px;">
-              </td>
-              <td id="aboutme">
-                <h1>A Little Bit About Me!</h1>
-                <p style="line-height: 2.0; font-size:20px;">
-                    Hello! My name is Sage Luong and I am a third-year Cognitive Science major with a minor in Digital Humanities! 
-                    I was born in the Los Angeles area and have stayed ever since because who can beat the awesome weather and culture here?
-                    I hope to apply what I'm learning to UI/UX design, and I love studying topics that use new technology and platforms to
-                    better showcase projects with a humanitarian heart. In other words, I like the idea of expressing creativity with
-                    technology and the Internet, and I hope to use my designs to help humans have better experiences with tech. 
-                </p>
-                <p style="line-height: 2.0; font-size:20px;">
-                    As a critical digital map maker, I hope to illuminate the voices, desires, and narratives of those who are often silenced.
-                    By pairing the realness of geolocation data and personal anecdotes, I hope to highlight the stories of all
-                    the diverse lives that populate this country to spread awareness and spread empathy in a recently jaded world.
-                </p>
-              </td>
-            </tr>
-        </table>
-
-        <h1 align="center">What Else Do I Like?</h1>
-
-        <table align="center">
-            <tr>
-              <td valign="top" id="otherinterests">
-                <h2>My Hobby Interests</h2>
-                    <ul>
-                        <li>&#128211; Bullet Journaling</li>
-                        <li>&#128174; Origami</li>
-                        <li>&#127918; Video Games</li>
-                        <li>&#9986; Crafting Random Things</li>
-                        <li> &#128021; Petting Fluffy Doggos</li>
-                    </ul>
-              </td>
-              <td valign="top" id="otherinterests">
-                <h2>My Career Interests</h2>
-                    <ul>
-                        <li>&#128241; UI/UX</li>
-                        <li>&#128187; Web Design</li>
-                        <li>&#128396; Graphic Design</li>
-                    </ul>
-              </td>
-              <td valign="top" id="otherinterests">
-                <h2>My Favorite Food Ranked</h2>
-                    <ol>
-                        <li>&#129375; Dim Sum</li>
-                        <li>&#129377; Fried Tofu</li>
-                        <li>&#129370; Egg Drop Soup</li>
-                        <li>&#127829; Pesto Pizza</li>
-                        <li>&#127858; Goulash</li>
-                    </ol>
-              </td>
-            </tr>
-        </table>
-
+            <div id="the_map"></div>
         </div>
         <div id="footer">
             Copyright(2023)
         </div>
+        <script src="js/init.js"></script>
     </body>
 </html>
