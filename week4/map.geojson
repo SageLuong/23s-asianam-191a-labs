@@ -1,0 +1,57 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+    {
+      "type":"Feature",
+      "properties":{
+        "place":"East Beach Tacos in Santa Barbara, CA!",
+        "color":"green"
+        },
+        "geometry":{
+          "coordinates":[
+            -119.67538500000063,
+            34.418787230059195
+            ],
+            "type":"Point"}
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "place":"Silver Street Market in Albuquerque, NM!",
+          "color":"grey"
+          },
+          "geometry":{
+            "coordinates":[
+              -106.6497282711634,
+              35.082441464539826
+              ],
+              "type":"Point"}
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "place":"Balboa Japanese Garden in Encino, CA!",
+          "color":"red"
+          },
+          "geometry":{
+            "coordinates":[
+              -118.48093255787774,
+              34.183366953775916
+              ],
+              "type":"Point"}
+        },
+        {
+          "type":"Feature",
+          "properties":{
+            "place":"Bruin Plate at UCLA!",
+            "color":"blue"
+            },
+            "geometry":{
+              "coordinates":[
+                -118.44981097124328,
+                34.071790667655236
+                ],
+                "type":"Point"}
+        }
+    ]
+}

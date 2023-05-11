@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sage's Favorite Animals Survey</title>
+        <link rel="icon" type="image/jpg" href="images/shiba-heart.jpg">
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="styles/animals.css">
+        <!-- Leaflet's css-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+        <!-- Leaflet's JavaScript-->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <ul id="navbar">
+                <li id="navbuttons"><a id="navlinksdefault", href="index.html">Home</a></li>
+                <li id="navbuttons"><a id="navlinksdefault", href="restaurants.html">Favorite Restaurants Maps</a></li>
+                <li id="navbuttons"><a id="navlinksactive", href="animals.html"><b>Favorite Animals Map</b></a></li>
+                <li id="navbuttons"><a id="navlinksdefault", href="journal.html">Bullet Journaling Spreads</a></li>
+                <li id="navbuttons"><a id="navlinksdefault", href="https://steamcommunity.com/profiles/76561199073031485/">Steam Profile</a></li>
+                <li id="navbuttons"><a id="navlinksdefault", href="https://www.behance.net/sageluong">Portfolio</a></li>
+              </ul>
+
+            <h1 align="center" style="margin-top:45px">
+                Sage's Favorite Animals Map and Survey!
+            </h1>
+
+            <p style="line-height: 2.0; font-size:20px;">
+                After gathering information about people's favorite animals with a Google Form, I placed all the information on a map based
+                off of some of their habitats! If you click on the markers, you'll learn some fun facts that the participants submitted, too!
+                Happy learning!
+            </p>
+
+            <div id="buttons"></div>
+        </header>
+
+        <div class="main">
+            
+            <div id="the_map"></div>
+            <div id="contents">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfUIaUwNP7f8buAZ2_Teh99U1X1k_CkhzE5ZlZqG_ORBJyjnQ/viewform?embedded=true" width="640" height="590" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+
+        <div id="footer">
+            Copyright(2023)
+        </div>
+        <script src="js/animals.js"></script>
+    </body>
+
+
+</html>
