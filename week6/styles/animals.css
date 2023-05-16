@@ -6,7 +6,7 @@
 
 body{
     display: grid;
-    grid-template-rows: 150px auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "header" "introduction" "main_content" "footer";
     background-color: rgb(255, 253, 238);
     color: rgb(49, 64, 38);
