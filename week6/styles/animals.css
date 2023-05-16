@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: "Alice";
+}
+
+body{
+    display: grid;
+    grid-template-rows: 150px auto auto auto;
+    grid-template-areas: "header" "introduction" "main_content" "footer";
+    background-color: rgb(255, 253, 238);
+    color: rgb(49, 64, 38);
+    gap: 10px;
+}
+
+header{
+    grid-area: header;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(50, 55, 45);
+  }
+
+#navbuttons {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+  
+#navlinksactive {
+    display: block;
+    background-color: rgb(253, 137, 122);
+    color: rgb(50, 55, 45);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+#navlinksdefault {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+    transition: background-color 0.5s;
+  }
+
+ul li{
+    line-height: 2.0;
+    font-size:20px;
+}
+
+ol li{
+    line-height: 2.0;
+    font-size:20px;
+}
+
+#introduction{
+    grid-area: introduction;
+    display: grid;
+    grid-template-rows: auto auto; 
+    grid-template-areas: "description" "buttons";
+}
+
+#description{
+    grid-area: description;
+    line-height: 2.0;
+    font-size: 20px;
+}
+
+#buttons{
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.main{
+    grid-area: main_content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main_map content";
+    display: grid;
+}
+
+.surveyButtons{
+    cursor: pointer;
+    color: rgb(50, 55, 45);
+    background: rgb(253, 137, 122);
+    border-radius: 5px;
+    padding: 16px 32px 16px 32px;
+    margin: 0 8px 8px 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.surveyButtons:hover{
+    background-color: rgb(50, 55, 45);
+    color: rgb(255, 253, 238);
+    transition: background-color .25s;
+}
+
+#contents{
+    grid-area: content;
+    display: grid;
+    grid-template-rows: 1fr; 
+    grid-template-areas: "survey"
+}
+
+#the_map{
+    height:80vh;
+    grid-area: main_map;
+}
+
+#theSurvey{
+    grid-area: survey;
+}
